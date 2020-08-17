@@ -8,10 +8,10 @@ export type Product = {
 
 type ProductListProps = { products: Product[] };
 
-export default function ProductList({ products }: ProductListProps) {
+export default function ProductList(props: ProductListProps) {
   return (
     <ul>
-      {products.map(product => <li>{product.name}</li>)}
+      {props.products.map(product => <li>{product.name}</li>)}
     </ul>
   )
 };
